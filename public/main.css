@@ -1,0 +1,140 @@
+body {
+	background:rgb(242, 242, 242);
+	/*margin-top:50px;*/
+	font: 15px "Trebuchet MS";
+	color:#611616;
+    background-image: url("f1_background_v2.png");
+    background-size: contain;
+    background-repeat: no-repeat;    
+}
+
+h1 {
+    margin-left: 40px;
+}
+
+.selectSeason {
+    margin-left: 20px;
+    left: 20%;
+    height: 40px;
+    width: 190px;
+    font: 20px "Trebuchet MS";
+    text-align: center;
+    line-height: 5;
+}
+
+tr:hover {
+    background-color: coral;
+}
+
+th {
+    background-color: #04AA6D;
+    color: white;
+    height: 30px;
+    text-align: center;
+}
+
+.driverStandingsTable {
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 80%;
+    font: 15px "Trebuchet MS";
+    text-align: left;
+    line-height: 22px;
+    display: none;
+}
+
+.constructorStandingsTable {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 25%;
+    font: 15px "Trebuchet MS";
+    text-align: left;
+    line-height: 22px;
+    display: none;
+    float: right;
+}
+
+#overallPosTitle {
+    margin-top: 20px;  
+    
+}
+
+#winsInSeason {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+#constructorsWinsInSeason {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+#table1, #table2 {    
+    width: 70%;
+}
+
+.pos {
+    width: 40px;
+}
+
+.points {
+    width: 50px;
+}
+
+tr:nth-of-type(2) {     
+    font: 17px "Trebuchet MS";
+    font-weight: bold;   
+}
+
+#winsBarchart_div {       
+    float: left;       
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 45%;     
+    min-height: 250px;
+    max-height: 400px;    
+}
+
+#constructorsWinsBarchart_div {      
+    float: right;
+    right: 10%;
+    margin-right: 50px;
+    margin-top: 20px;
+    width: 35%;     
+    min-height: 250px;        
+    max-height: 400px;    
+}
+
+#overallPosChart_div {
+    display: inline-table;
+    top: 200%;
+    margin-top: 50px;
+    width: 95%;
+    height: 900px;
+    margin-left: 20px;
+    min-width: 500px;
+    min-height: 400px;
+    float: right;
+    font: 15px "Trebuchet MS";
+}
+
+#wrap {
+    width: 100%;
+    min-width: 100%;
+}
+
+.line {        
+    stroke-width: 2px;    
+}
+
+.label {
+    font-size: 15;
+}
+
+.grid line {
+    stroke: lightgrey;
+    stroke-opacity: 0.7;
+    shape-rendering: crispEdges;
+}

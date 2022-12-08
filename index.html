@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Formula 1 viz</title>
+        <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+        <script src="https://unpkg.com/lineupjs/build/LineUpJS.js"></script>
+        <link href="./public/main.css" rel="stylesheet">
+        <link rel="icon" href="./public/f1_logo.png">        
+    </head>        
+    
+    <body>
+        <h1> Select season : </h1>
+        <select id="selectSeasonBox" class="selectSeason" onchange="seasonSelected();"> Select season </select>
+        <script type="text/javascript" src="public/myD3app.js"></script>
+        
+        <div id="table1">
+            
+            <table id="driverStandingsTable" class="driverStandingsTable">
+
+                <tr>
+                    <th class="pos"> Pos. </th>
+                    <th> Name </th>
+                    <th> No. </th>
+                    <th> Nationality </th>
+                    <th> Car </th>
+                    <th class="points"> Points </th>
+                </tr>
+
+            </table>
+        </div>
+
+        <div id="table2">
+            <table id="constructorStandingsTable" class="constructorStandingsTable">
+
+                <tr>
+                    <th class="pos"> Pos. </th>
+                    <th> Constructor </th>
+                    <th> Nationality </th>
+                    <th class="points"> Points </th>
+                </tr>
+            </table>
+        </div>                
+        
+        <div id="wrap">
+            <div id="winsBarchart_div">
+                <h1 id="winsInSeason"> Drivers wins in season </h1>
+            </div>
+        
+            <div id="constructorsWinsBarchart_div">
+                <h1 id="constructorsWinsInSeason"> Constructors wins in season </h1>
+            </div>
+        </div>
+
+        <div id="overallPosChart_div">
+            <h1 id="overallPosTitle"> Drivers overall position </h1>
+        </div>
+        
+
+        
+    </body>
+</html>
